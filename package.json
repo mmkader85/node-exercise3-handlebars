@@ -1,0 +1,30 @@
+{
+  "name": "node-exercise3-handlebars",
+  "version": "1.0.0",
+  "description": "edureka node exercise3 using handlebars",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmkader85/node-exercise3-handlebars.git"
+  },
+  "keywords": [
+    "edureka",
+    "node",
+    "express",
+    "handlebars"
+  ],
+  "author": "Muhammed Abdul Kader",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mmkader85/node-exercise3-handlebars/issues"
+  },
+  "homepage": "https://github.com/mmkader85/node-exercise3-handlebars#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0"
+  }
+}

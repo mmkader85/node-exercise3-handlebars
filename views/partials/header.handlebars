@@ -1,0 +1,21 @@
+header
+    nav.navbar.navbar-default.navbar-fixed-top
+        .container
+            .navbar-header
+                button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+                    span.icon-bar
+                    span.icon-bar
+                    span.icon-bar
+                a.navbar-brand(href='/') iLoveMyCity
+            .collapse.navbar-collapse
+                ul.nav.navbar-nav
+                    li(class={active: city == 'berlin'})
+                        a(href='/berlin') Berlin
+                    li(class={active: city == 'paris'})
+                        a(href='/paris') Paris
+                    li(class={active: city == 'madrid'})
+                        a(href='/madrid') Madrid
+                    li(class={active: city == 'london'})
+                        a(href='/london') London
+                    li(class={active: city == 'newyork'})
+                        a(href='/newyork') New York
