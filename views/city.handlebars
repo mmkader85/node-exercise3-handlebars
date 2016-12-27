@@ -1,15 +1,5 @@
-doctype html
-html
-    head
-        include partials/head.handlebars
-    body
-        include partials/header.handlebars
-        section.sectionMain
-            .container
-                .row.voffset6
-                    h1=headline
-                .row.voffset3
-                    - for (var i=1; i<=imageCount; i++)
-                        .col-md-6
-                            img.img-thumbnail(src='/images/'+city+'/'+city+'-'+i+'.jpg')
-        include partials/commonjs.handlebars
+{{#each imagesIndices}}
+<div class="col-md-6">
+    <img class="img-thumbnail" src="/images/{{../city}}/{{../city}}-{{this}}.jpg" />
+</div>
+{{/each}}

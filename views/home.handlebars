@@ -1,13 +1,1 @@
-doctype html
-html
-    head
-        include partials/head.handlebars
-    body
-        include partials/header.handlebars
-        section.sectionMain
-            .container
-                .row.voffset6
-                    h1=headline
-                .row.voffset3
-                    img.img-responsive(src='/images/main.jpg', alt=title)
-        include partials/commonjs.handlebars
+<img class="img-responsive" src="/images/main.jpg" alt="{{title}}" />

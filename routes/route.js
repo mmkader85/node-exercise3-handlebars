@@ -1,5 +1,5 @@
 /**
- * Created by muhammed on 25/12/16.
+ * Created by muhammed on 26/12/16.
  */
 exports.home = function (req, res) {
     res.render('home', {
@@ -10,7 +10,7 @@ exports.home = function (req, res) {
 };
 
 exports.city = function (req, res) {
-    var imageCount = 4,
+    var imagesIndices = [1, 2, 3, 4],
         city = req.params.city,
         title = 'iLoveMyCity',
         headline = 'We believe that every city have something to say';
@@ -33,7 +33,7 @@ exports.city = function (req, res) {
             headline = 'London: Sparkling, Still, Food, Gorgeous';
             break;
         case 'newyork':
-            imageCount = 6;
+            imagesIndices.push(5, 6);
             title = 'New York';
             headline = 'New York: Come to New York to become someone new';
             break;
@@ -43,6 +43,6 @@ exports.city = function (req, res) {
         city: city,
         title: title,
         headline: headline,
-        imageCount: imageCount
+        imagesIndices: imagesIndices
     });
 };
